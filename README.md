@@ -27,7 +27,10 @@
 Please refer [run.py](./code/run.py) for how to reproduce our results
 
 ## Alternative Approaches
-We attempted to reduce dependence on the `div` hyper parameter entirely by scaling the number of quantiles based on the length of the intervals at each level. 
-[Square root scaled num_quantiles](./results/sqrt_scaled_mean_results.csv)
-The test error for the `Phoneme` series was found to be extremely low. Random samples of the 5 folds with the least accuracy can be visualized through the notebook [visualize_series.ipynb](./code/visualize_series.ipynb). In an attempt to remedy this we extended the initial 4 representation features to 6, by adding a rolling skewness measure and a rolling Zero-Crossing Rate measure.
+We attempted to reduce dependence on the `div` hyper parameter entirely by scaling the number of quantiles based on the length of the intervals at each level.  
+
+[Square root scaled num_quantiles](./results/sqrt_scaled_mean_results.csv). 
+
+The test error for the `Phoneme` series was found to be extremely low. Random samples of the 5 folds with the least accuracy can be visualized through the notebook [visualize_series.ipynb](./code/visualize_series.ipynb). In an attempt to remedy this we extended the initial 4 representation features to 6, by adding a rolling skewness measure and a rolling Zero-Crossing Rate measure.  
+
 [6 Representation features (Rolling Skewness + Rolling ZCF)](./results/scale_aware_6_features_mean_results.csv)
