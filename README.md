@@ -25,6 +25,9 @@
 
 ### Running the experiments
 Please refer [run.py](./code/run.py) for how to reproduce our results
+```
+python run.py
+```
 [summarize.py](./code/summarize.py) can be used to calculate mean values across all resamples for all folds
 
 ## Alternative Approaches
